@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>explore API</title>
+    <style>
+        #quote{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            background-color: antiquewhite;
+            padding: 15px;
+            text-align: center;
+        }
+        .color{
+            color: rgba(44, 99, 0, 0.89);
+        }
+        #loadQuote{
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+        #refreshLoadQuote{
+            margin-top: 15px;
+            padding: 15px 22px;
+            border-radius: 12px;
+            font-size: 18px;
+            border: none;
+            background-color: rgb(95, 86, 255);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="quote">
+        <h1>Load Randomly Quote by <span class="color">M</span>ilan<span class="color">H</span>ira</h1>
+        <p id="loadQuote"></p>
+        <button id="refreshLoadQuote" onclick="displayApiRandomQuote()">Lode More Quote</button>
+    </div>
+    <!-- link scrip file -->
+     <script src="expo.js"></script>
+</body>
+</html>
